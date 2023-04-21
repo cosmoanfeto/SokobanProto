@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | My project (4)</title>
+    <title>Unity WebGL Player | sokoban3D</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">My project (4)</div>
+        <div id="unity-build-title">sokoban3D</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web.loader.js";
+      var loaderUrl = buildUrl + "/SokobanProto.loader.js";
       var config = {
-        dataUrl: buildUrl + "/web.data",
-        frameworkUrl: buildUrl + "/web.framework.js",
-        codeUrl: buildUrl + "/web.wasm",
+        dataUrl: buildUrl + "/SokobanProto.data",
+        frameworkUrl: buildUrl + "/SokobanProto.framework.js",
+        codeUrl: buildUrl + "/SokobanProto.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "My project (4)",
+        companyName: "UnityCoreUmng",
+        productName: "sokoban3D",
         productVersion: "0.2",
         showBanner: unityShowBanner,
       };
@@ -97,7 +97,7 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/web.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/SokobanProto.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
